@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-spotlights.html">Artist Spotlights</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for artworks...">
+        <div class="cart-container">
+            <div id="cart-icon">
+                <img src="cart.png" alt="Cart Icon"> <!-- Replace with your cart icon -->
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-summary" class="hidden">
+                <h3>Cart Summary</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Most Popular</h2>
+        <section class="artwork-list">
+            <article>
+                <img src="popular-artwork1.jpg" alt="Popular Artwork 1">
+                <h3>Black Iris</h3>
+                <p>The effects of light on natural landscapes, such as "Water Lilies" and "Impression, Sunrise.</p>
+            </article>
+            <article>
+                <img src="popular-artwork2.jpg" alt="Popular Artwork 2">
+                <h3>Red Canna</h3>
+                <p> Abstract Expressionist movement, Pollock is famous for his drip painting technique.</p>
+            </article>
+            <!-- More artworks can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+</body>
+</html>

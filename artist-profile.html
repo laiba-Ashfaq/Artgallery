@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-profile.html">Artists</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for artworks...">
+        <div class="cart-container">
+            <div id="cart-icon">
+                <img src="cart.png" alt="Cart Icon"> <!-- Replace with your cart icon -->
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-summary" class="hidden">
+                <h3>Cart Summary</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Categories Section -->
+        <section class="artist-categories">
+            <h2>Artists by Category</h2>
+            <div class="categories-list">
+                <a href="artist-profile.html?artist=frida-kahlo" class="category-link">Frida Kahlo</a>
+                <a href="artist-profile.html?artist=pablo-picasso" class="category-link">Pablo Picasso</a>
+                <a href="artist-profile.html?artist=vincent-van-gogh" class="category-link">Vincent Van Gogh</a>
+                <!-- Add more artists here -->
+            </div>
+        </section>
+
+        <!-- Artist Profile Section -->
+        <section class="artist-profile">
+            <h2 id="artist-name">Artist Name</h2>
+            <p id="artist-bio">Artist bio...</p>
+
+            <section class="artwork-gallery">
+                <h3>Gallery</h3>
+                <!-- Gallery of artworks -->
+                <div class="gallery-item">
+                    <img src="artwork1.jpg" alt="Famous Work 1">
+                    <p>Title of Famous Work 1</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="artwork2.jpg" alt="Famous Work 2">
+                    <p>Title of Famous Work 2</p>
+                </div>
+                <!-- Add more artworks here -->
+            </section>
+
+            <section class="contact-form">
+                <h3>Contact the Artist</h3>
+                <form id="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

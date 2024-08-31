@@ -1,0 +1,46 @@
+{
+    "artists": [
+        {
+            "name": "Frida Kahlo",
+            "bio": "A Mexican artist celebrated for her surreal exploration of identity, post-colonialism, and gender.",
+            "famousWorks": [
+                {
+                    "title": "The Two Fridas",
+                    "image": "m.jpg"
+                },
+                {
+                    "title": "Self-Portrait ",
+                    "image": "o.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Pablo Picasso",
+            "bio": "A Spanish painter and sculptor who co-founded the Cubist movement.",
+            "famousWorks": [
+                {
+                    "title": "Les Demoiselles d'Avignon",
+                    "image": "l.jpg"
+                },
+                {
+                    "title": "Guernica",
+                    "image": "k.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Vincent Van Gogh",
+            "bio": "A Dutch Post-Impressionist painter known for his vivid landscapes and self-portraits.",
+            "famousWorks": [
+                {
+                    "title": "Starry Night",
+                    "image": "starynights.jpg"
+                },
+                {
+                    "title": "Sunflowers",
+                    "image": "sunflower.jpg"
+                }
+            ]
+        }
+    ]
+}

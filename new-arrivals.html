@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-spotlights.html">Artist Spotlights</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for artworks...">
+        <div class="cart-container">
+            <div id="cart-icon">
+                <img src="cart.png" alt="Cart Icon"> <!-- Replace with your cart icon -->
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-summary" class="hidden">
+                <h3>Cart Summary</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    
+    
+        <h2>New Arrivals</h2>
+        <section class="artwork-list">
+            <article>
+                <img src="artwork1.jpg" alt="Artwork 1">
+                <h3>Whispers in Blue</h3>
+                <p>Artist: [Raphael]</br>
+                    Medium: Paint on Canvas</br>
+                    Dimensions: 36" x 48"</br>
+                    Year: 2024</br>
+                    
+                    Description:
+                    "Whispers in Blue" is a captivating exploration of introspection.
+                    </p>
+                    <button class="view-details" onclick="location.href='artwork-detail.html?id=1'">View Details</button>
+            </article>
+            <article>
+                <img src="artwork2.jpg" alt="Artwork 2">
+                <h3>Golden Ruins</h3>
+                <p>Artist: [Peter Paul ]</br>
+                    Medium: Paint on Canvas</br>
+                    Dimensions: 30" x 48"</br>
+                    Year: 2022</br>
+                    
+                    Description:
+                    "Golden Ruins" is a captivating exploration of tranquility and introspection.
+                    </p>
+                    <button class="view-details" onclick="location.href='artwork-detail.html?id=2'">View Details</button>
+            </article>
+            <article>
+                <img src="artwork3.jpg" alt="Artwork 2">
+                <h3>Scilence</h3>
+                <p>Artist: [Edgar Degas ]</br>
+                    Medium: Paint on Canvas</br>
+                    Dimensions: 48" x 48"</br>
+                    Year: 2021</br>
+                    
+                    Description:
+                    "Scilence" is a captivating exploration of tranquility and introspection.
+                     </p>
+                     <button class="view-details" onclick="location.href='artwork-detail.html?id=3'">View Details</button>
+            </article>
+            <article>
+                <img src="artwork4.jpg" alt="Artwork 2">
+                <h3>Tears</h3>
+                <p>Artist: [Sandro Botticelli ]</br>
+                    Medium: Paint on Canvas</br>
+                    Dimensions: 30" x 48"</br>
+                    Year: 2022</br>
+                    
+                    Description:
+                    "Tears" is a captivating exploration of tranquility and introspection.
+                     </p>
+                     <button class="view-details" onclick="location.href='artwork-detail.html?id=4'">View Details</button>
+            </article>
+            <article>
+                <img src="artwork5.jpg" alt="Artwork 2">
+                <h3>Empires sunset</h3>
+                <p>Artist: [Caravaggio ]</br>
+                    Medium: Paint on Canvas</br>
+                    Dimensions: 30" x 48"</br>
+                    Year: 2020</br>
+                    
+                    Description:
+                    "Empires sunset" is a captivating exploration of  introspection.
+                    </p>
+                    <button class="view-details" onclick="location.href='artwork-detail.html?id=5'">View Details</button>
+            </article>
+            <!-- More artworks can be added here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+</body>
+</html>

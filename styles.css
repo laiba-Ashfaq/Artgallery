@@ -1,0 +1,908 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header.navbar h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header.navbar nav ul {
+    list-style: none;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+header.navbar nav ul li {
+    margin-left: 15px;
+}
+
+header.navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header.navbar input[type="text"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.carousel {
+    height: 300px;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+}
+
+.carousel-images img.active {
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-prev,
+.carousel-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+/* styles.css */
+
+/* General styles for the New Arrivals section */
+#new-arrivals {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Container for artwork cards */
+#artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards */
+}
+
+/* Style for each artwork card */
+#artwork-list article {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust card size to fit 3 per row with space for gaps */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 300px; /* Optional: max width for large screens */
+}
+
+/* Style for artwork images */
+#artwork-list img {
+    width: 100%; /* Ensure the image fits the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Style for artwork titles and details */
+#artwork-list h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#artwork-list p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Style for buttons */
+#artwork-list .view-details {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#artwork-list .view-details:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+/* styles.css */
+
+/* General styles for the New Arrivals section */
+#new-arrivals {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+/* Container for artwork cards */
+.artwork-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards */
+}
+
+/* Style for each artwork card */
+.artwork-list article {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust card size to fit 3 per row with space for gaps */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 300px; /* Optional: max width for large screens */
+}
+
+/* Style for artwork images */
+.artwork-list img {
+    width: 100%; /* Ensure the image fits the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Style for artwork titles and details */
+.artwork-list h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.artwork-list p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em; /* Adjust font size for better readability */
+}
+
+/* Style for buttons */
+.artwork-list .view-details {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.artwork-list .view-details:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+/* styles.css */
+
+/* General styles for the Artist Spotlights section */
+.artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards */
+}
+
+/* Style for each artist card */
+.artist-list article {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust card size to fit 3 per row with space for gaps */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    max-width: 300px; /* Optional: max width for large screens */
+}
+
+/* Style for artist images */
+.artist-list img {
+    width: 100%; /* Ensure the image fits the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Style for artist names and descriptions */
+.artist-list h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.artist-list p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em; /* Adjust font size for better readability */
+}
+
+
+
+.artwork-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.artwork-info img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.details {
+    flex: 1;
+    min-width: 200px;
+}
+
+.artist-bio, .reviews, .artwork-gallery {
+    margin-top: 30px;
+}
+
+.contact-form form, .checkout form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .checkout input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.artwork-detail {
+    padding: 20px;
+}
+
+.artwork-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.artwork-image {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+
+.artwork-description {
+    padding: 20px;
+    flex: 1;
+}
+
+.artwork-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.purchase-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.purchase-btn:hover {
+    background-color: #45a049;
+}
+
+/* Artist Section */
+.artist-section {
+    margin-bottom: 40px;
+}
+
+.artist-works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist-works img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Reviews Section */
+.reviews-section {
+    margin-bottom: 40px;
+}
+
+.review {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.review-form select {
+    margin-bottom: 10px;
+}
+
+.review-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.review-form button:hover {
+    background-color: #45a049;
+}
+section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+section:hover {
+    background-color: #f0f0f0;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-right: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.artwork-list, .artist-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artwork-list article, .artist-list article {
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(30% - 150px);
+    box-sizing: border-box;
+}
+
+.artwork-list article img, .artist-list article img {
+    width: 50%;
+    height: 50%;
+    max-width: 100%;
+    height: auto;
+}
+.cart-summary {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+.view-details {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.view-details:hover {
+    background-color: #333;
+}
+.section-link {
+    text-decoration: none;  /* Remove underline */
+    color: black;           /* Set link text color to black */
+}
+
+/* Ensure link color stays black even when hovered */
+.section-link:hover,
+.section-link:visited {
+    color: black;           /* Keep text color black for hover and visited states */
+}
+
+/* Additional styling for the h2 */
+.section-link h2 {
+    margin: 0;
+    padding: 10px 0;
+    display: inline-block;
+    font-size: 1.5em;       /* Adjust font size if needed */
+    font-weight: bold;      /* Ensure it's bold for better visibility */
+    color: black;           /* Explicitly set h2 color to black */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Artist Categories */
+.artist-categories {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.artist-categories h2 {
+    margin-bottom: 20px;
+}
+
+.categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-link {
+    display: block;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.category-link:hover {
+    background-color: #ccc;
+}
+
+/* Artist Profile */
+.artist-profile {
+    padding: 20px;
+    text-align: center;
+}
+
+.artist-profile h2 {
+    margin-bottom: 10px;
+}
+
+.artist-profile p {
+    margin-bottom: 20px;
+}
+
+.artwork-gallery {
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    margin: 10px;
+    display: inline-block;
+}
+
+.gallery-item img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact-form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form input, .contact-form form textarea {
+    margin-bottom: 10px;
+}
+.cart-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#cart-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+#cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+#cart-summary {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px;
+}
+
+#cart-summary.hidden {
+    display: none;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+#checkout-button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artwork-list article, .artist-list article {
+        width: 100%;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .artwork-info {
+        flex-direction: column;
+    }
+
+    .artwork-image {
+        width: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header.navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header.navbar nav ul {
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    header.navbar nav ul li {
+        margin: 5px 0;
+    }
+
+    .artwork-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .checkout form {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    header.navbar h1 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .carousel {
+        height: 200px;
+    }
+
+    .checkout form, .contact-form form {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header input[type="text"] {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .artwork-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artwork-list article {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .artwork-list article {
+        max-width: 100%;
+    }
+
+    .artwork-list p {
+        font-size: 0.9rem;
+    }
+
+    button.view-details {
+        width: 100%;
+    }
+}

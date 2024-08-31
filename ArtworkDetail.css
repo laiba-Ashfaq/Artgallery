@@ -1,0 +1,23 @@
+.artwork-detail {
+    padding: 20px;
+  }
+  
+  .artwork-info {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .artwork-info img {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .details {
+    max-width: 500px;
+  }
+  
+  .artist-bio, .reviews {
+    margin-top: 30px;
+  }
+  

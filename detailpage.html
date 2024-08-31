@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork Details</title>
+    <style>
+        /* Add your styles here */
+        #artwork-card {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        #artwork-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #artwork-title {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        #artwork-artist, #artwork-description, #artwork-price {
+            font-size: 18px;
+            margin: 8px 0;
+        }
+
+        #buy-now {
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #buy-now:hover {
+            background-color: #45a049;
+        }
+
+        #artwork-reviews {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        #reviews-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #reviews-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div id="artwork-card">
+        <img id="artwork-image" src="" alt="Artwork Image">
+        <h2 id="artwork-title"></h2>
+        <p id="artwork-artist"></p>
+        <p id="artwork-description"></p>
+        <p id="artwork-price"></p>
+        <button id="buy-now" onclick="location.href='checkout.html'">Buy Now</button>
+        <div id="artwork-reviews">
+            <h3>Customer Reviews</h3>
+            <ul id="reviews-list"></ul>
+        </div>
+    </div>
+
+<script>
+    // Fetch the JSON data
+    fetch('artworks.json')
+        .then(response => response.json())
+        .then(data => {
+            // Assuming you want to display the first artwork in the JSON
+            const artwork = data.artworks[0];
+
+            // Populate the HTML elements with the fetched data
+            document.getElementById('artwork-image').src = artwork.image;
+            document.getElementById('artwork-title').textContent = artwork.title;
+            document.getElementById('artwork-artist').textContent = "by " + artwork.artist;
+            document.getElementById('artwork-description').textContent = artwork.description;
+            document.getElementById('artwork-price').textContent = "Price: " + artwork.price;
+
+            // Populate the reviews
+            const reviewsList = document.getElementById('reviews-list');
+            artwork.reviews.forEach(review => {
+                const li = document.createElement('li');
+                li.textContent = `${review.user}: ${review.comment} (${review.rating} stars)`;
+                reviewsList.appendChild(li);
+            });
+
+            // Buy Now button functionality
+            document.getElementById('buy-now').addEventListener('click', function() {
+                // Get the artwork title and price from the detail page
+                const title = document.getElementById('artwork-title').textContent;
+                const price = document.getElementById('artwork-price').textContent;
+
+                // Store the title and price in localStorage
+                localStorage.setItem('artworkTitle', title);
+                localStorage.setItem('artworkPrice', price);
+
+                // Redirect to the checkout page
+                window.location.href = 'checkout.html';
+            });
+        })
+        .catch(error => console.error('Error fetching the JSON data:', error));
+</script>
+</body>
+</html>

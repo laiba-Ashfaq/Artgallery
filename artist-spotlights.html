@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Spotlights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-spotlights.html">Artist Spotlights</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for artworks...">
+        <div class="cart-container">
+            <div id="cart-icon">
+                <img src="cart.png" alt="Cart Icon"> <!-- Replace with your cart icon -->
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-summary" class="hidden">
+                <h3>Cart Summary</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h2>Artist Spotlights</h2>
+        <section class="artist-list">
+            <article>
+                <img src="artist1.jpg" alt="Artist 1">
+                <h3>Frida Kahlo</h3>
+                <p> A Mexican artist celebrated  of identity, post-colonialism, and gender.</p>
+            </article>
+            <article>
+                <img src="artist2.jpg" alt="Artist 2">
+                <h3>Pablo Picasso</h3>
+                <p>A Spanish painter and sculptor who co-founded the Cubist movement.  </p>
+            </article>
+            <!-- More artists can be spotlighted here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+</body>
+</html>

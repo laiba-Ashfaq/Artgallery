@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-profile.html">Artists</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-input" placeholder="Search for artworks...">
+            
+        <div id="cart-summary" class="hidden">
+            <h3>Cart Summary</h3>
+            <ul id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-button">Checkout</button>
+        </div>
+        
+        
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-images">
+            <img src="banner1.png" alt="Artwork 1">
+            <img src="banner2.png" alt="Artwork 2">
+            <!-- Add more images as needed -->
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-prev">Prev</button>
+            <button class="carousel-next">Next</button>
+        </div>
+    </section>
+
+    <section id="new-arrivals" class="section-link">
+        <a href="new-arrivals.html">
+        <h2>New Arrivals</h2>
+        </a>
+        <div id="artwork-list">
+            <!-- Artworks will be dynamically populated here -->
+        </div>
+    </section>
+    
+    <section id="most-popular" class="section-link">
+        <a href="most-popular.html">
+        <h2>Most Popular</h2>
+        </a>
+        <!-- Most Popular Section -->
+    </section>
+    
+    <section id="artist-spotlights" class="section-link">
+        <a href="artist-spotlights.html">
+        <h2>Artist Spotlights</h2>
+        </a>
+        <!-- Artist Spotlights Section -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

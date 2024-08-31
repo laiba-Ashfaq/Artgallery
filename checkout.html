@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="most-popular.html">Most Popular</a></li>
+                <li><a href="artist-profile.html">Artists</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for artworks...">
+        <div class="cart-container">
+            <div id="cart-icon">
+                <img src="cart.png" alt="Cart Icon"> <!-- Replace with your cart icon -->
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-summary" class="hidden">
+                <h3>Cart Summary</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <input type="text" id="full-name" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <h3>Summary</h3>
+            <p id="summary"></p>
+            <button type="submit">Confirm Purchase</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Art Gallery</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Retrieve the title and price from localStorage
+            const artworkTitle = localStorage.getItem('artworkTitle');
+            const artworkPrice = localStorage.getItem('artworkPrice');
+
+            // If the title and price are available, display them
+            if (artworkTitle && artworkPrice) {
+                const summaryParagraph = document.getElementById('summary');
+                summaryParagraph.textContent = `Artwork Title: ${artworkTitle} - ${artworkPrice}`;
+            } else {
+                // Handle the case where the title or price is not available
+                alert("Artwork details not found. Please go back and select an artwork.");
+                window.location.href = 'new-arrivals.html'; // Redirect if details are missing
+            }
+        });
+
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Retrieve the title and price from localStorage
+            const artworkTitle = localStorage.getItem('artworkTitle');
+            const artworkPrice = localStorage.getItem('artworkPrice');
+
+            // Display alert with the title and price
+            if (artworkTitle && artworkPrice) {
+                alert(`Order Confirmed!\n\nArtwork Title: ${artworkTitle}\nPrice: ${artworkPrice}`);
+                // Clear localStorage for next use
+                localStorage.removeItem('artworkTitle');
+                localStorage.removeItem('artworkPrice');
+                // Optionally redirect to a thank you or confirmation page
+                // window.location.href = 'thank-you.html';
+            } else {
+                alert("Artwork details not found. Please go back and select an artwork.");
+            }
+        });
+    </script>
+</body>
+</html>

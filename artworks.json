@@ -1,0 +1,66 @@
+{
+    "artworks": [
+      {
+        "id":1,
+        "title": "Whispers in Blue",
+        "artist": "[Raphael]",
+        "image": "artwork1.jpg",
+        "description": "Whispers in Blue is a captivating exploration of tranquility and introspection.",
+        "price": "$1,500",
+        "reviews": [
+          {"user": "Alice", "rating": 5, "comment": "Absolutely stunning!"},
+          {"user": "Bob", "rating": 4, "comment": "Beautiful use of colors."}
+        ]
+      },
+      {
+        "id":2,
+        "title": "Golden Ruins",
+        "artist": "[Peter Paul ]",
+        "image": "artwork2.jpg",
+        "description": "Golden Ruins is a captivating exploration of tranquility and introspection.",
+        "price": "$1,500",
+        "reviews": [
+          {"user": "Alice", "rating": 5, "comment": "Absolutely stunning!"},
+          {"user": "Bob", "rating": 4, "comment": "Beautiful use of colors."}
+        ]
+      },
+      {
+        "id":3,
+        "title": "Scilence",
+        "artist": "[Edgar Degas]",
+        "image": "artwork3.jpg",
+        "description": "Scilence is a captivating exploration of tranquility and introspection.",
+        "price": "$1,500",
+        "reviews": [
+          {"user": "Alice", "rating": 5, "comment": "Absolutely stunning!"},
+          {"user": "Bob", "rating": 5, "comment": "Beautiful use of colors."}
+        ]
+      },
+      {
+        "id":4,
+        "title": "Tears",
+        "artist": "[Sandro Botticelli ]",
+        "image": "artwork4.jpg",
+        "description": "Tears is a captivating exploration of tranquility and introspection.",
+        "price": "$1,600",
+        "reviews": [
+          {"user": "Alice", "rating": 5, "comment": "Absolutely stunning!"},
+          {"user": "Bob", "rating": 4, "comment": "Beautiful use of colors."}
+        ]
+      },
+      {
+        "id":5,
+        "title": "Empires sunset",
+        "artist": "[Caravaggio]",
+        "image": "artwork5.jpg",
+        "description": "Empires sunset is a captivating exploration of tranquility and introspection.",
+        "price": "$1,000",
+        "reviews": [
+          {"user": "Alice", "rating": 5, "comment": "Absolutely stunning!"},
+          {"user": "Bob", "rating": 4, "comment": "Beautiful use of colors."}
+        ]
+      }
+    ]
+  }
+  
+ 
