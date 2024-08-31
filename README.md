@@ -34,7 +34,7 @@ npm start<br>
 ![Screenshot 2024-09-01 024335](https://github.com/user-attachments/assets/6190b266-0263-42da-8433-8412a8e4aaf4)
 # Demo of art gallery Dashboard of artist profile page
 </br>
-![Screenshot 2024-09-01 024423](https://github.com/user-attachments/assets/7630529e-c9bd-45e9-92ca-22d044449360)
+![Screenshot 2024-09-01 024423](https://github.com/user-attachments/assets/5b5e67e4-6a35-42b9-be03-ccca88d69cd2)
 
 # check out live 
 
